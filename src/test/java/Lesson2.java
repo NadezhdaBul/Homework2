@@ -16,6 +16,8 @@ public class Lesson2 {
         $("#wiki_search_results").$(byText("SoftAssertions")).
                 shouldHave(text("SoftAssertions")).click();
         $$(".markdown-body li").get(2).shouldHave(text("JUnit5 extension"));
+        $(".markdown-body").shouldBe(text("Using JUnit5 extend test class"));
+
 
     }
 
